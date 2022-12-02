@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        bat 'javac HelloWorld.java java HelloWorld'
+        bat 'javac HelloWorld.java'
+        bat 'java HelloWorld'
       }
     }
 
