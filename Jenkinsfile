@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('Print') {
       steps {
         bat 'javac HelloWorld.java'
         bat 'java HelloWorld'
